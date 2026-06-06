@@ -5,7 +5,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Apartment } from "@/data/apartments";
 import { whatsappLink, site } from "@/data/site";
-import { UsersIcon, BedIcon, ArrowIcon } from "@/components/icons";
+import {
+  UsersIcon,
+  BedIcon,
+  BathIcon,
+  AreaIcon,
+  EyeIcon,
+  ArrowIcon,
+} from "@/components/icons";
 import { Reveal } from "@/components/Reveal";
 
 export function ApartmentCard({
@@ -106,13 +113,27 @@ export function ApartmentCard({
             >
               {apartment.name}
             </h3>
-            <p
-              className={`mt-2 font-display text-lg italic ${
-                apartment.featured ? "text-olive-100" : "text-olive-600"
-              }`}
-            >
-              {apartment.tagline}
-            </p>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <p
+                className={`font-display text-lg italic ${
+                  apartment.featured ? "text-olive-100" : "text-olive-600"
+                }`}
+              >
+                {apartment.tagline}
+              </p>
+              {apartment.seaView && (
+                <span
+                  className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium ${
+                    apartment.featured
+                      ? "bg-cream/15 text-cream ring-1 ring-cream/25"
+                      : "bg-ocean-50 text-ocean-400 ring-1 ring-ocean-200/60"
+                  }`}
+                >
+                  <EyeIcon className="h-3.5 w-3.5" />
+                  Sea view
+                </span>
+              )}
+            </div>
 
             <p
               className={`mt-5 leading-relaxed ${
@@ -122,7 +143,7 @@ export function ApartmentCard({
               {apartment.description}
             </p>
 
-            {/* Meta */}
+            {/* Spec strip */}
             <div
               className={`mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm ${
                 apartment.featured ? "text-cream/90" : "text-charcoal"
@@ -136,7 +157,29 @@ export function ApartmentCard({
                 <BedIcon className="h-5 w-5 opacity-70" />
                 {apartment.bedrooms}
               </span>
+              {apartment.bathrooms && (
+                <span className="inline-flex items-center gap-2">
+                  <BathIcon className="h-5 w-5 opacity-70" />
+                  {apartment.bathrooms}
+                </span>
+              )}
+              {apartment.size && (
+                <span className="inline-flex items-center gap-2">
+                  <AreaIcon className="h-5 w-5 opacity-70" />
+                  {apartment.size}
+                </span>
+              )}
             </div>
+
+            {apartment.beds && (
+              <p
+                className={`mt-3 text-sm ${
+                  apartment.featured ? "text-cream/65" : "text-charcoal-50"
+                }`}
+              >
+                <span className="font-medium">Sleeping:</span> {apartment.beds}
+              </p>
+            )}
 
             {/* Features */}
             <ul

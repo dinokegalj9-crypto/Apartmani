@@ -212,6 +212,35 @@ export function BedIcon(props: IconProps) {
   );
 }
 
+export function BathIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 12V6.5A1.5 1.5 0 0 1 5.5 5c.9 0 1.4.5 1.7 1" />
+      <path d="M7 7.5 9 6" />
+      <path d="M3 12h18v2a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" />
+      <path d="M7 18l-1 2M18 18l1 2" />
+    </svg>
+  );
+}
+
+export function AreaIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="4" y="4" width="16" height="16" rx="1.5" />
+      <path d="M8 4v3M4 8h3M16 20v-3M20 16h-3" />
+    </svg>
+  );
+}
+
+export function EyeIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
+      <circle cx="12" cy="12" r="2.5" />
+    </svg>
+  );
+}
+
 export function ArrowIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

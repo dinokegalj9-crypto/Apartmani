@@ -12,7 +12,10 @@ export type Apartment = {
   name: string;
   capacity: string;
   bedrooms: string;
-  size: string;
+  beds?: string;
+  bathrooms?: string;
+  size?: string;
+  seaView?: boolean;
   tagline: string;
   description: string;
   features: string[];
@@ -30,19 +33,22 @@ export const apartments: Apartment[] = [
     id: "apartment-1",
     number: 1,
     name: "Apartment One — The Active Retreat",
-    capacity: "4–5 guests",
-    bedrooms: "2 bedrooms",
-    size: "Sea-view terrace",
+    capacity: "Up to 5 guests",
+    bedrooms: "1 bedroom + living room",
+    beds: "1 double bed · sofa bed (2) · sofa bed (1)",
+    bathrooms: "1 bathroom",
+    size: "75 m²",
+    seaView: true,
     tagline: "Where relaxation meets play",
     description:
-      "Our signature apartment pairs refined Mediterranean living with a one-of-a-kind private sports and entertainment area. Train, play and unwind — then step out to the pool and garden. Perfect for active families and friends who want more than a place to sleep.",
+      "Our largest and most distinctive apartment — a generous 75 m² with a private sea-view balcony and a one-of-a-kind sports and entertainment area. A double bedroom plus flexible sofa beds in the living room sleep up to five, making it the natural choice for active families and groups of friends who want more than a place to sleep.",
     features: [
       "Private sports & activity area",
-      "Spacious open-plan living",
-      "Fully equipped kitchen",
+      "Sea-view balcony & terrace",
+      "Open-plan living with sofa beds",
+      "Fully equipped kitchen & dining",
       "Air conditioning",
-      "Smart TV & fast WiFi",
-      "Sun-drenched terrace",
+      "Flat-screen TV & free WiFi",
     ],
     featured: true,
     highlight: {
@@ -68,7 +74,6 @@ export const apartments: Apartment[] = [
     name: "Apartment Two — Garden Calm",
     capacity: "2–4 guests",
     bedrooms: "1 bedroom + sofa",
-    size: "Garden access",
     tagline: "Wake to birdsong and lavender",
     description:
       "A calm, light-filled apartment opening onto the Mediterranean garden. Sip your morning coffee among the herbs and flowers, then drift to the pool just steps away. Ideal for couples and small families.",
@@ -93,7 +98,6 @@ export const apartments: Apartment[] = [
     name: "Apartment Three — Sun Terrace",
     capacity: "4 guests",
     bedrooms: "2 bedrooms",
-    size: "Private terrace",
     tagline: "Long lunches, golden sunsets",
     description:
       "Designed for slow summer days, Apartment Three offers a generous private terrace made for long lunches and golden-hour aperitifs. Spacious, airy and elegantly finished for the whole family.",
@@ -118,7 +122,6 @@ export const apartments: Apartment[] = [
     name: "Apartment Four — Coastal Light",
     capacity: "2–3 guests",
     bedrooms: "1 bedroom",
-    size: "Bright & airy",
     tagline: "Effortless Mediterranean ease",
     description:
       "An intimate, beautifully styled apartment bathed in coastal light. Everything you need for an effortless escape, with the pool, jacuzzi and garden waiting just outside. A favourite for couples.",
