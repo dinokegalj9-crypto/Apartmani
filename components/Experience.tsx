@@ -67,8 +67,8 @@ export function Experience() {
           >
             <motion.div style={{ y: imgY }} className="absolute inset-[-10%]">
               <Image
-                src="/photos/pool.jpg"
-                alt="Sunlit pool and garden at Apartments Kegalj"
+                src="/photos/relaxation.jpg"
+                alt="Red verbena flowers in the Mediterranean garden at Apartments Kegalj"
                 fill
                 sizes="100vw"
                 className="object-cover"

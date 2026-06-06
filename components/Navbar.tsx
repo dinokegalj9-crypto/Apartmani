@@ -25,13 +25,14 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-luxe ${
-        scrolled
-          ? "bg-cream/80 shadow-luxe-sm backdrop-blur-xl"
-          : "bg-transparent"
-      }`}
-    >
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-luxe ${
+          scrolled
+            ? "bg-cream/80 shadow-luxe-sm backdrop-blur-xl"
+            : "bg-transparent"
+        }`}
+      >
       <nav
         className="container-luxe flex h-20 items-center justify-between"
         aria-label="Primary"
@@ -114,8 +115,11 @@ export function Navbar() {
           </div>
         </button>
       </nav>
+      </header>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — rendered OUTSIDE the header so the scrolled header's
+          backdrop-blur (which creates a containing block) can't trap this
+          fixed overlay and clip it to the header's height. */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -123,7 +127,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-cream lg:hidden"
+            className="fixed inset-0 z-[45] bg-cream lg:hidden"
           >
             <div className="flex h-full flex-col justify-center px-8">
               <ul className="space-y-2">
@@ -161,6 +165,6 @@ export function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
