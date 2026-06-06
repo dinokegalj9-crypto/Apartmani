@@ -6,8 +6,7 @@ import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion
 import { site, whatsappLink } from "@/data/site";
 import { ArrowIcon } from "@/components/icons";
 
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=80";
+const HERO_IMG = "/photos/podstrana-aerial.jpg";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -32,13 +31,14 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0 -z-10">
         <Image
           src={HERO_IMG}
-          alt="Apartments Kegalj pool and Mediterranean garden at golden hour"
+          alt="Aerial view of Podstrana, Croatia, at golden hour near Apartments Kegalj"
           fill
           priority
           sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-hero-fade" />
+        <div className="absolute inset-0 bg-charcoal/25" />
       </motion.div>
 
       {/* Headline */}
