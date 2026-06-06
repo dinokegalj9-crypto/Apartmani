@@ -55,7 +55,7 @@ export const features: Feature[] = [
   },
   {
     title: "Beach Nearby",
-    description: "The Adriatic Sea is a gentle 600m stroll away.",
+    description: "The Adriatic Sea and sandy beach are a gentle 300m stroll away.",
     Icon: BeachIcon,
   },
 ];

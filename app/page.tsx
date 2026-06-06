@@ -24,9 +24,17 @@ const jsonLd = {
   numberOfRooms: 4,
   address: {
     "@type": "PostalAddress",
+    streetAddress: site.location.street,
     addressLocality: "Podstrana",
+    postalCode: "21312",
     addressRegion: "Split-Dalmatia County",
     addressCountry: "HR",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: site.rating.score,
+    bestRating: site.rating.max,
+    reviewCount: site.rating.count,
   },
   geo: {
     "@type": "GeoCoordinates",

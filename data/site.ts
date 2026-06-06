@@ -8,21 +8,37 @@ export const site = {
   shortName: "Kegalj",
   tagline: "A Private Mediterranean Escape Near Split",
   description:
-    "Apartments Kegalj — a boutique Mediterranean retreat in Podstrana, Croatia, near Split. Four luxury apartments with a swimming pool, outdoor jacuzzi, garden, BBQ area and the sea just 600m away.",
+    "Apartments Kegalj — a boutique Mediterranean retreat in Podstrana, Croatia, near Split. Four luxury apartments with a swimming pool, outdoor jacuzzi, garden, BBQ area and the sea just 300m away.",
   url: "https://www.apartments-kegalj.com",
   locale: "en",
 
   location: {
     place: "Podstrana, Croatia",
     near: "Near Split",
-    beachDistanceMeters: 600,
-    address: "Podstrana, Split-Dalmatia County, Croatia",
+    beachDistanceMeters: 300,
+    street: "Bartola Kašića 8",
+    address: "Bartola Kašića 8, 21312 Podstrana, Croatia",
     // Podstrana coordinates
     lat: 43.4869,
     lng: 16.5556,
     googleMapsEmbed:
-      "https://www.google.com/maps?q=Podstrana,Croatia&output=embed",
-    googleMapsLink: "https://maps.google.com/?q=Podstrana,Croatia",
+      "https://www.google.com/maps?q=Bartola+Ka%C5%A1i%C4%87a+8,+Podstrana,+Croatia&output=embed",
+    googleMapsLink:
+      "https://maps.google.com/?q=Bartola+Ka%C5%A1i%C4%87a+8,+Podstrana,+Croatia",
+    // Verified distances from the listings
+    distances: {
+      split: "10 km",
+      airport: "27 km",
+      grocery: "150 m",
+      busStop: "200 m",
+    },
+  },
+
+  rating: {
+    score: 8.7,
+    max: 10,
+    count: 38,
+    source: "Booking.com",
   },
 
   contact: {
@@ -36,8 +52,8 @@ export const site = {
   booking: {
     whatsappMessage:
       "Hello Apartments Kegalj! I would like to book a stay. Could you please share availability?",
-    bookingCom: "https://www.booking.com/",
-    airbnb: "https://www.airbnb.com/",
+    bookingCom: "https://www.booking.com/hotel/hr/apartments-kegalj.html",
+    airbnb: "https://www.airbnb.com/rooms/31461431",
   },
 
   social: {

@@ -23,7 +23,7 @@ export function Footer() {
             </p>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
               A private Mediterranean escape — four boutique apartments with a
-              pool, jacuzzi, garden and the sea just 600m away.
+              pool, jacuzzi, garden and the sea just 300m away.
             </p>
             <div className="mt-6 flex gap-3">
               <a

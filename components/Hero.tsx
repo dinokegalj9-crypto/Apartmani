@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
-import { whatsappLink } from "@/data/site";
+import { site, whatsappLink } from "@/data/site";
 import { ArrowIcon } from "@/components/icons";
 
 const HERO_IMG =
@@ -80,7 +80,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mt-7 max-w-2xl text-base font-light tracking-wide text-cream/90 sm:text-lg"
         >
-          Pool · Jacuzzi · Garden · BBQ · 600m from the Sea
+          Pool · Jacuzzi · Garden · BBQ · 300m from the Sea
         </motion.p>
 
         <motion.div
@@ -101,6 +101,25 @@ export function Hero() {
           <a href="#apartments" className="btn-light w-full sm:w-auto">
             Explore Apartments
           </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-8 flex items-center justify-center gap-2.5 text-sm text-cream/85"
+        >
+          <span className="flex" aria-hidden>
+            {Array.from({ length: 5 }).map((_, i) => (
+              <svg key={i} viewBox="0 0 24 24" className="h-4 w-4 fill-current text-olive-200">
+                <path d="m12 17.3 5.2 3.1-1.4-5.9 4.6-4-6-.5L12 4 9.6 9.9l-6 .5 4.6 4-1.4 5.9z" />
+              </svg>
+            ))}
+          </span>
+          <span>
+            <strong className="font-semibold text-cream">{site.rating.score}</strong>
+            /{site.rating.max} · {site.rating.count} reviews on {site.rating.source}
+          </span>
         </motion.div>
       </motion.div>
 

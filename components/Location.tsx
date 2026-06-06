@@ -6,24 +6,24 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 
 const highlights = [
   {
-    title: "Podstrana Beaches",
-    detail: "~600 m",
-    body: "Long pebble and shingle beaches along the clear Adriatic, with beach bars and watersports.",
+    title: "Sea & Sandy Beach",
+    detail: "300 m",
+    body: "A quiet, family-friendly sandy beach on the clear Adriatic, just a few minutes' walk away.",
   },
   {
-    title: "Split Old Town",
-    detail: "~10 km",
-    body: "Diocletian's Palace, the Riva waterfront and the buzz of Dalmatia's cultural capital.",
+    title: "Split & Diocletian's Palace",
+    detail: "10 km",
+    body: "The UNESCO-listed old town, Riva waterfront and ferry port — roughly a 15-minute drive.",
   },
   {
-    title: "Restaurants & Konobas",
-    detail: "Nearby",
-    body: "Authentic Dalmatian taverns and seafront dining just minutes from your door.",
+    title: "Shops & Bus Stop",
+    detail: "150–200 m",
+    body: "The nearest grocery store is 150 m away and a local bus stop just 200 m from your door.",
   },
   {
-    title: "Attractions & Day Trips",
-    detail: "Easy reach",
-    body: "Islands of Brač & Hvar, Krka waterfalls and the slopes of Mosor mountain.",
+    title: "Split Airport",
+    detail: "27 km",
+    body: "Easy transfers to and from Split (Resnik) Airport, with islands like Brač & Hvar within reach.",
   },
 ];
 
