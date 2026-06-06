@@ -9,7 +9,6 @@ import {
   UsersIcon,
   BedIcon,
   BathIcon,
-  AreaIcon,
   EyeIcon,
   ArrowIcon,
 } from "@/components/icons";
@@ -161,12 +160,6 @@ export function ApartmentCard({
                 <span className="inline-flex items-center gap-2">
                   <BathIcon className="h-5 w-5 opacity-70" />
                   {apartment.bathrooms}
-                </span>
-              )}
-              {apartment.size && (
-                <span className="inline-flex items-center gap-2">
-                  <AreaIcon className="h-5 w-5 opacity-70" />
-                  {apartment.size}
                 </span>
               )}
             </div>
