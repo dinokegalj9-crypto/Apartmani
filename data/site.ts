@@ -6,7 +6,7 @@
 export const site = {
   name: "Apartments Kegalj",
   shortName: "Kegalj",
-  tagline: "A Private Mediterranean Escape Near Split",
+  tagline: "Mediterranean Studio Retreat Near Split",
   description:
     "Apartments Kegalj — a boutique Mediterranean retreat in Podstrana, Croatia, near Split. Four luxury apartments with a swimming pool, outdoor jacuzzi, garden, BBQ area and the sea just 300m away.",
   url: "https://www.apartments-kegalj.com",

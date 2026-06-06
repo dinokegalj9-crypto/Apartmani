@@ -55,23 +55,28 @@ export function Hero() {
           Podstrana · Croatia · Near Split
         </motion.p>
 
-        <h1 className="heading-xl mx-auto max-w-5xl text-balance text-[2.75rem] text-cream drop-shadow-sm sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
-          {["A Private Mediterranean", "Escape Near Split"].map((line, i) => (
-            <span key={line} className="block overflow-hidden">
-              <motion.span
-                className="block"
-                initial={{ y: "110%" }}
-                animate={{ y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 0.35 + i * 0.12,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-              >
-                {line}
-              </motion.span>
-            </span>
-          ))}
+        <h1
+          className="heading-xl mx-auto flex flex-nowrap items-baseline justify-center gap-x-[0.28em] whitespace-nowrap text-cream drop-shadow-sm"
+          style={{ fontSize: "clamp(0.95rem, 4.2vw, 3.5rem)" }}
+        >
+          {["Mediterranean", "Studio", "Retreat", "Near", "Split"].map(
+            (word, i) => (
+              <span key={word} className="inline-block overflow-hidden pb-[0.12em]">
+                <motion.span
+                  className="inline-block"
+                  initial={{ y: "110%" }}
+                  animate={{ y: 0 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.35 + i * 0.09,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                >
+                  {word}
+                </motion.span>
+              </span>
+            )
+          )}
         </h1>
 
         <motion.p
