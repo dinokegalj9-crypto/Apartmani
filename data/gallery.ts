@@ -20,6 +20,6 @@ export const galleryImages: MasonryImage[] = [
   { src: "/photos/garden-flowers.jpg", alt: "Flowering garden beds beside the apartments", span: "regular" },
   { src: "/photos/jacuzzi-night.jpg", alt: "Jacuzzi illuminated at night", span: "tall" },
   { src: "/photos/garden-flowers-2.jpg", alt: "Red verbena flowers in the garden", span: "regular" },
-  { src: u("photo-1499793983690-e29da59ef1c2", 1200), alt: "Adriatic coastline near Podstrana", span: "wide" },
+  { src: "/photos/podstrana-aerial.jpg", alt: "Aerial view of Podstrana marina at golden hour", span: "wide" },
   { src: u("photo-1512917774080-9991f1c4c750"), alt: "Sunset over the Dalmatian hills", span: "regular" },
 ];

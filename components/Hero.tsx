@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion
 import { site, whatsappLink } from "@/data/site";
 import { ArrowIcon } from "@/components/icons";
 
-const HERO_IMG = "/photos/podstrana-aerial.jpg";
+const HERO_IMG = "/photos/split-hero.jpg";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -31,7 +31,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0 -z-10">
         <Image
           src={HERO_IMG}
-          alt="Aerial view of Podstrana, Croatia, at golden hour near Apartments Kegalj"
+          alt="View over Split, Croatia, with the old town, harbour and mountains near Apartments Kegalj"
           fill
           priority
           sizes="100vw"
