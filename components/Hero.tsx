@@ -56,8 +56,8 @@ export function Hero() {
         </motion.p>
 
         <h1
-          className="heading-xl mx-auto flex flex-nowrap items-baseline justify-center gap-x-[0.28em] whitespace-nowrap text-cream drop-shadow-sm"
-          style={{ fontSize: "clamp(0.95rem, 4.2vw, 3.5rem)" }}
+          className="heading-xl mx-auto flex max-w-full flex-nowrap items-baseline justify-center gap-x-[0.28em] whitespace-nowrap text-cream drop-shadow-sm"
+          style={{ fontSize: "clamp(0.78rem, 3.8vw, 3.4rem)" }}
         >
           {["Mediterranean", "Studio", "Retreat", "Near", "Split"].map(
             (word, i) => (

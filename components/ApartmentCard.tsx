@@ -70,7 +70,7 @@ export function ApartmentCard({
             </div>
 
             {/* Thumbnails */}
-            <div className="flex gap-2 p-4">
+            <div className="flex gap-2 overflow-x-auto p-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {apartment.gallery.map((img, i) => (
                 <button
                   key={img.src}
