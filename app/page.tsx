@@ -30,11 +30,17 @@ const jsonLd = {
     addressRegion: "Split-Dalmatia County",
     addressCountry: "HR",
   },
+  starRating: {
+    "@type": "Rating",
+    ratingValue: site.stars,
+    bestRating: 5,
+  },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: site.rating.score,
-    bestRating: site.rating.max,
-    reviewCount: site.rating.count,
+    // Combined guest rating across Booking.com and Airbnb, normalised to /5
+    ratingValue: 4.5,
+    bestRating: 5,
+    reviewCount: site.ratings.booking.count + site.ratings.airbnb.count,
   },
   geo: {
     "@type": "GeoCoordinates",

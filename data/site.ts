@@ -34,11 +34,11 @@ export const site = {
     },
   },
 
-  rating: {
-    score: 8.7,
-    max: 10,
-    count: 38,
-    source: "Booking.com",
+  // Star classification (3-star apartment studio) and guest ratings
+  stars: 3,
+  ratings: {
+    booking: { score: 8.8, max: 10, count: 72 },
+    airbnb: { score: 4.8, max: 5, count: 12 },
   },
 
   contact: {

@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { site, whatsappLink } from "@/data/site";
 import { ArrowIcon } from "@/components/icons";
+import { StarRating } from "@/components/StarRating";
 
 const HERO_IMG = "/photos/split-hero.jpg";
 
@@ -112,19 +113,32 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-8 flex items-center justify-center gap-2.5 text-sm text-cream/85"
+          className="mt-8 flex flex-col items-center gap-3"
         >
-          <span className="flex" aria-hidden>
-            {Array.from({ length: 5 }).map((_, i) => (
-              <svg key={i} viewBox="0 0 24 24" className="h-4 w-4 fill-current text-olive-200">
-                <path d="m12 17.3 5.2 3.1-1.4-5.9 4.6-4-6-.5L12 4 9.6 9.9l-6 .5 4.6 4-1.4 5.9z" />
-              </svg>
-            ))}
-          </span>
-          <span>
-            <strong className="font-semibold text-cream">{site.rating.score}</strong>
-            /{site.rating.max} · {site.rating.count} reviews on {site.rating.source}
-          </span>
+          <div className="flex items-center gap-2.5">
+            <StarRating
+              rating={site.stars}
+              className="text-amber-300"
+              starClassName="h-5 w-5"
+              delay={1.1}
+            />
+            <span className="text-xs font-medium uppercase tracking-widest2 text-cream/90">
+              3-Star Apartment Studio
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm text-cream/80">
+            <span>
+              <strong className="text-cream">{site.ratings.booking.score}</strong>
+              /{site.ratings.booking.max} · {site.ratings.booking.count} reviews · Booking.com
+            </span>
+            <span className="hidden text-cream/40 sm:inline" aria-hidden>
+              |
+            </span>
+            <span>
+              <strong className="text-cream">{site.ratings.airbnb.score}</strong>
+              /{site.ratings.airbnb.max} · {site.ratings.airbnb.count} reviews · Airbnb
+            </span>
+          </div>
         </motion.div>
       </motion.div>
 
