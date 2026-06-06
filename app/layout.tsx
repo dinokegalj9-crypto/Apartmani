@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     description: site.description,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        width: 1200,
-        height: 630,
-        alt: "Apartments Kegalj — pool and Mediterranean garden",
+        url: "/photos/bbq-komin.jpg",
+        width: 1800,
+        height: 1314,
+        alt: "Apartments Kegalj — traditional stone oven and komin in the garden",
       },
     ],
   },

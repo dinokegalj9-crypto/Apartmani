@@ -90,7 +90,7 @@ export const apartments: Apartment[] = [
       { src: u("photo-1522708323590-d24dbb6b0267"), alt: "Inviting bedroom in Apartment Two" },
       { src: u("photo-1505691938895-1758d7feb511"), alt: "Comfortable living space" },
       { src: u("photo-1556909212-d5b604d0c90d"), alt: "Modern kitchen" },
-      { src: u("photo-1416879595882-3373a0480b5b"), alt: "Mediterranean garden setting" },
+      { src: "/photos/garden.jpg", alt: "Mediterranean garden beside Apartment Two" },
     ],
   },
   {

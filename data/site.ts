@@ -42,11 +42,10 @@ export const site = {
   },
 
   contact: {
-    // Update these to the real details before going live.
-    phoneDisplay: "+385 91 234 5678",
-    phone: "+385912345678",
-    whatsapp: "385912345678", // digits only, country code first
-    email: "info@apartments-kegalj.com",
+    phoneDisplay: "+385 91 455 0508",
+    phone: "+385914550508",
+    whatsapp: "385914550508", // digits only, country code first
+    email: "apartmani.kegalj@gmail.com",
   },
 
   booking: {

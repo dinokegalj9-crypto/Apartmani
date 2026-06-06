@@ -13,13 +13,13 @@ const moments = [
   },
   {
     title: "Long summer evenings",
-    body: "The scent of rosemary and woodsmoke from the stone oven, laughter around the table as the sky turns amber.",
-    img: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=900&q=80",
+    body: "The scent of rosemary and woodsmoke from the stone oven and komin, laughter around the table as the fire glows and the sky turns dark.",
+    img: "/photos/bbq-komin.jpg",
   },
   {
     title: "Family gatherings",
-    body: "Space to come together — and space to slip away. A garden made for the people you love most.",
-    img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80",
+    body: "Space to come together — and space to slip away. A lush Mediterranean garden made for the people you love most.",
+    img: "/photos/garden.jpg",
   },
 ];
 
