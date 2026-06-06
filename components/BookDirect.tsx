@@ -17,7 +17,7 @@ export function BookDirect() {
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1800&q=80"
+          src="/photos/pool-night.jpg"
           alt=""
           fill
           sizes="100vw"

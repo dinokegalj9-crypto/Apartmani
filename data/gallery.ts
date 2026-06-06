@@ -10,16 +10,16 @@ export type MasonryImage = {
 
 /** Curated masonry gallery (Section 5). Real property photos lead the set. */
 export const galleryImages: MasonryImage[] = [
-  { src: "/photos/bbq-komin.jpg", alt: "Traditional stone oven and komin with an open fire at dusk", span: "wide" },
-  { src: "/photos/garden.jpg", alt: "Mediterranean garden with oleander and lawn", span: "tall" },
-  { src: u("photo-1566073771259-6a8506099945", 1200), alt: "Resort-style pool at dusk", span: "regular" },
+  { src: "/photos/pool-night.jpg", alt: "Swimming pool glowing turquoise in the evening", span: "wide" },
+  { src: "/photos/sports-1.jpg", alt: "Private sports area with boxing bag and artificial grass", span: "tall" },
+  { src: "/photos/jacuzzi.jpg", alt: "Outdoor jacuzzi with bubbling water", span: "regular" },
+  { src: "/photos/garden.jpg", alt: "Mediterranean garden with oleander and lawn", span: "regular" },
+  { src: "/photos/bbq-komin.jpg", alt: "Traditional stone oven and komin with an open fire", span: "tall" },
+  { src: "/photos/pool.jpg", alt: "Swimming pool and garden by day", span: "wide" },
+  { src: "/photos/sports-2.jpg", alt: "Fitness area with agility ladder, exercise bike and trophies", span: "regular" },
   { src: "/photos/garden-flowers.jpg", alt: "Flowering garden beds beside the apartments", span: "regular" },
-  { src: u("photo-1502672260266-1c1ef2d93688"), alt: "Sun terrace overlooking the garden", span: "tall" },
-  { src: u("photo-1571896349842-33c89424de2d"), alt: "Crystal-clear swimming pool", span: "regular" },
-  { src: u("photo-1560448204-e02f11c3d0e2"), alt: "Elegant modern living room", span: "regular" },
+  { src: "/photos/jacuzzi-night.jpg", alt: "Jacuzzi illuminated at night", span: "tall" },
+  { src: "/photos/garden-flowers-2.jpg", alt: "Red verbena flowers in the garden", span: "regular" },
   { src: u("photo-1499793983690-e29da59ef1c2", 1200), alt: "Adriatic coastline near Podstrana", span: "wide" },
-  { src: u("photo-1505693416388-ac5ce068fe85"), alt: "Tranquil bedroom retreat", span: "regular" },
-  { src: u("photo-1540541338287-41700207dee6"), alt: "Poolside loungers in the sun", span: "regular" },
-  { src: u("photo-1512917774080-9991f1c4c750"), alt: "Sunset over the Dalmatian hills", span: "tall" },
-  { src: u("photo-1533777857889-4be7c70b33f7"), alt: "Outdoor dining under the pergola", span: "regular" },
+  { src: u("photo-1512917774080-9991f1c4c750"), alt: "Sunset over the Dalmatian hills", span: "regular" },
 ];

@@ -61,10 +61,10 @@ export const apartments: Apartment[] = [
       ],
     },
     gallery: [
-      { src: u("photo-1560448204-e02f11c3d0e2"), alt: "Bright modern living room of Apartment One" },
-      { src: u("photo-1505693416388-ac5ce068fe85"), alt: "Serene bedroom with soft natural light" },
-      { src: u("photo-1571896349842-33c89424de2d"), alt: "Swimming pool beside the apartment" },
-      { src: u("photo-1571902943202-507ec2618e8f"), alt: "Outdoor activity and lounge area" },
+      { src: "/photos/sports-1.jpg", alt: "Private sports area with boxing bag, artificial grass and basketball hoop" },
+      { src: "/photos/sports-2.jpg", alt: "Fitness and activity space with boxing bag, agility ladder and exercise bike" },
+      { src: "/photos/pool.jpg", alt: "Swimming pool and garden at Apartments Kegalj" },
+      { src: "/photos/jacuzzi.jpg", alt: "Outdoor jacuzzi" },
     ],
   },
   {
@@ -116,7 +116,7 @@ export const apartments: Apartment[] = [
       { src: u("photo-1502005229762-cf1b2da7c5d6"), alt: "Stylish interior of Apartment Three" },
       { src: u("photo-1560185007-cde436f6a4d0"), alt: "Bedroom with terrace view" },
       { src: u("photo-1502672260266-1c1ef2d93688"), alt: "Sunny private terrace" },
-      { src: u("photo-1584622650111-993a426fbf0a"), alt: "Contemporary bathroom" },
+      { src: "/photos/garden-flowers-2.jpg", alt: "Flowering Mediterranean garden by Apartment Three" },
     ],
   },
   {
@@ -139,10 +139,10 @@ export const apartments: Apartment[] = [
       "Flat-screen TV & free WiFi",
     ],
     gallery: [
-      { src: u("photo-1493809842364-78817add7ffb"), alt: "Light-filled living room of Apartment Four" },
-      { src: u("photo-1540518614846-7eded433c457"), alt: "Peaceful bedroom" },
-      { src: u("photo-1484154218962-a197022b5858"), alt: "Modern kitchen corner" },
-      { src: u("photo-1540541338287-41700207dee6"), alt: "Pool and jacuzzi steps from Apartment Four" },
+      { src: "/photos/pool.jpg", alt: "Swimming pool just steps from Apartment Four" },
+      { src: "/photos/jacuzzi.jpg", alt: "Outdoor jacuzzi beside the pool" },
+      { src: "/photos/pool-night.jpg", alt: "Pool illuminated in the evening" },
+      { src: "/photos/jacuzzi-night.jpg", alt: "Jacuzzi glowing at night" },
     ],
   },
 ];

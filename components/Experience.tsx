@@ -9,7 +9,7 @@ const moments = [
   {
     title: "Poolside mornings",
     body: "Coffee in hand, sunlight on the water, the day still soft and unhurried. This is how every morning should begin.",
-    img: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=80",
+    img: "/photos/pool.jpg",
   },
   {
     title: "Long summer evenings",
@@ -67,8 +67,8 @@ export function Experience() {
           >
             <motion.div style={{ y: imgY }} className="absolute inset-[-10%]">
               <Image
-                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=80"
-                alt="Sunlit pool and terrace at Apartments Kegalj"
+                src="/photos/pool.jpg"
+                alt="Sunlit pool and garden at Apartments Kegalj"
                 fill
                 sizes="100vw"
                 className="object-cover"
